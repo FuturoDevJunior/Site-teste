@@ -1,0 +1,1018 @@
+/* Estilos customizados para o site Dr. Responde */
+
+/* Service Cards */
+.service-card--consulta {
+  background-image: url('https://images.unsplash.com/photo-1579154204601-68799da357bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card--exames {
+  background-image: url('https://images.unsplash.com/photo-1605880345939-c6a2becfec8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card--preventivo {
+  background-image: url('https://images.unsplash.com/photo-1581091870627-6370be88b3de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  z-index: 10002;
+}
+
+/* Footer note */
+.footer-note {
+  opacity: 0.3;
+}
+
+/* Mosaic Grid Backgrounds */
+.mosaic-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.mosaic-bg-equipe {
+  background-image: url('https://images.unsplash.com/photo-1591348278615-fefd0b95d433?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+.mosaic-bg-diagnostico {
+  background-image: url('https://images.unsplash.com/photo-1579154204601-2a7aa39d84b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+.mosaic-bg-urgencia {
+  background-image: url('https://images.unsplash.com/photo-1580281657520-553f2acae71b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+.mosaic-bg-monitoramento {
+  background-image: url('https://images.unsplash.com/photo-1593496207199-2341b4662d9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+/* Mosaic Card Overlay */
+.mosaic-card-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+/* Testimonial Card Max Width */
+.testimonial-card--max {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Efeito hover premium para elementos e botões */
+.hover-effect:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s var(--motion-ease);
+}
+
+.btn-cta {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s var(--motion-ease);
+  background: var(--accent-coral);
+  color: var(--neutral-white);
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #FF5252;
+}
+
+/* Novos estilos tipográficos */
+h1, h2, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.5px;
+}
+
+h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.service-overlay h3 {
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* ===== ESTILOS GLOBAIS ===== */
+.hero-image-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.team-card {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s var(--motion-ease);
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.8));
+  z-index: 1;
+}
+
+.team-overlay {
+  z-index: 2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.team-card--1 {
+  background-image: url('https://images.unsplash.com/photo-1554734867-bf3c00a49371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=1000&q=80&format=webp&crop=faces&fit=facearea');
+}
+
+.team-card--2 {
+  background-image: url('https://images.unsplash.com/photo-1551600271-0b9f11c411dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=1000&q=80&format=webp&crop=faces&fit=facearea');
+}
+
+.team-card--3 {
+  background-image: url('https://images.unsplash.com/photo-1622253692010-333f2da60381?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=1000&q=80&format=webp&crop=faces&fit=facearea');
+}
+
+.team-card--4 {
+  background-image: url('https://images.unsplash.com/photo-1622253694256-0a1a7f3b4d6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=1000&q=80&format=webp&crop=faces&fit=facearea');
+}
+
+/* ===== TIPOGRAFIA ===== */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-teal);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-coral);
+  margin: 1rem auto 0;
+}
+
+/* ===== COMPONENTES ===== */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Assinatura oculta */
+.signature {
+  opacity: 0.03;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  font-size: 8px;
+  -webkit-user-select: none; /* Safari/iOS */
+  user-select: none; /* Padrão */
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* DevFerreiraG Signature */
+.signature::after {
+  content: "Crafted with ♥ by DevFerreiraG";
+  display: block;
+  font-family: 'Courier New', monospace;
+}
+
+.text-white {
+  color: var(--neutral-white) !important;
+}
+
+.hero-content {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Variáveis CSS */
+:root {
+    --primary: #00B4B4;          /* Azul Hospitalar */
+    --secondary: #FF6F61;        /* Coral Vital */
+    --accent: #FFD166;           /* Dourado Terapêutico */
+    --neutral: #2A363B;          /* Azul Profundo */
+    --light: #F8F9FA;            /* Branco Puro */
+    
+    /* Novas Variáveis 3.0 */
+    --glass-bg: rgba(255,255,255,0.98);
+    --glass-border: 1px solid rgba(255,255,255,0.2);
+    --glass-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Variáveis de Gradiente */
+    --gradient-medical: linear-gradient(135deg, 
+        var(--primary) 0%, 
+        rgba(0,180,180,0.8) 100%
+    );
+
+    /* Novas variáveis */
+    --primary-light: #e6f7f7;
+    --gradient-primary: linear-gradient(135deg, #00B4B4 0%, #00D4D4 100%);
+    --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos Globais */
+body {
+    font-family: var(--font-body);
+    line-height: 1.75;
+    color: var(--neutral);
+}
+
+.hero {
+    background: var(--gradient-primary);
+    padding: 100px 0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a {
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Cards com hover suave */
+.service-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 194, 168, 0.2);
+}
+
+/* Nova paleta para dark mode */
+body.dark {
+    --primary: #00A896;
+    --secondary: #FF8A80;
+    --light: #1A1A1A;
+    --dark: #E0E0E0;
+    --accent: #FFC400;
+}
+
+/* Gradiente animado no navbar */
+.navbar {
+    background: rgba(255,255,255,0.98);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,180,180,0.1);
+}
+
+.navbar-scrolled {
+    background: rgba(255,255,255,0.98);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--primary) !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    font-size: 1.4em;
+    margin-right: 0.5rem;
+}
+
+.nav-link {
+    color: var(--neutral) !important;
+    font-weight: 600;
+    position: relative;
+    padding: 0.75rem 1.25rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Borda animada nos cards */
+.service-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    padding: 2px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderPulse 3s infinite;
+}
+
+@keyframes borderPulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
+
+/* Componentes principais */
+.btn {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+    background: var(--gradient-cta);
+    border: none;
+    padding: 1.25rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    color: white !important;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 25%,
+        rgba(255,255,255,0.2) 50%,
+        transparent 75%
+    );
+    transition: left 0.6s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255,111,97,0.3);
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: white !important;
+    border-color: var(--primary);
+}
+
+/* Cards interativos */
+.service-card {
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 auto 1.5rem;
+}
+
+/* Tipografia premium */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.hero h1 {
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Dashboard Moderno */
+.dashboard-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s var(--motion-ease);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, 
+        var(--primary) 0%, 
+        var(--secondary) 100%
+    );
+    opacity: 0.1;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.dashboard-card:hover::before {
+    opacity: 0.15;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dashboard-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.dashboard-card p {
+    color: var(--dark);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 8px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: var(--gradient-accent);
+    transition: width 0.8s var(--motion-ease);
+}
+
+/* Animações do Dashboard */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .dashboard-card {
+        animation: cardEntrance 0.6s ease forwards;
+    }
+    
+    .dashboard-card:nth-child(2) { animation-delay: 0.15s; }
+    .dashboard-card:nth-child(3) { animation-delay: 0.3s; }
+    .dashboard-card:nth-child(4) { animation-delay: 0.45s; }
+}
+
+/* Tipografia Cirúrgica */
+:root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', system-ui;
+    --font-accent: 'Playfair Display', serif;
+}
+
+/* Sistema de Ícones Médicos */
+.medical-icon {
+    width: 100px;
+    height: 100px;
+    background: var(--gradient-medical);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 10px 20px rgba(0,180,180,0.15);
+}
+
+/* Adicione no CSS */
+.progress-bar-85 { width: 85%; }
+.progress-bar-65 { width: 65%; }
+.progress-bar-90 { width: 90%; }
+.progress-bar-98 { width: 98%; }
+
+/* Seção de Exames */
+.exam-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,180,180,0.1);
+}
+
+.exam-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.exam-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.exam-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Pediatria Humanizada */
+.pediatric-section {
+    background: linear-gradient(45deg, #f8f9fa 0%, #e3f2fd 100%);
+}
+
+.pediatric-features .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: var(--primary);
+    min-width: 50px;
+}
+
+.pediatric-environment img {
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* Tipografia Dinâmica */
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 20px; }
+}
+
+/* Sistema de Glassmorfismo */
+.glass-panel {
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-radius: 24px;
+    border: var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    padding: 2rem;
+}
+
+/* Efeito de Profundidade 3D */
+.card-3d {
+    transform: perspective(1000px) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+    transition: transform 0.4s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+
+/* Microinterações Especiais */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-primary:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, 
+        transparent 20%, 
+        rgba(255,255,255,0.2) 50%, 
+        transparent 80%
+    );
+    animation: btnShine 3s infinite linear;
+}
+
+@keyframes btnShine {
+    from { transform: translateX(-50%) rotate(45deg); }
+    to { transform: translateX(150%) rotate(45deg); }
+}
+
+/* Sistema de Ícones Animados */
+.service-icon {
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    background: var(--primary);
+    color: white;
+    font-size: 2rem;
+    transition: all 0.4s var(--motion-ease);
+    cursor: pointer;
+}
+
+.service-icon:hover {
+    transform: 
+        translateY(-0.5rem) 
+        rotate(15deg) 
+        scale(1.1);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+}
+
+/* Efeito de Gradiente Interativo */
+.interactive-gradient {
+    position: relative;
+    isolation: isolate;
+}
+
+.interactive-gradient::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        var(--primary) 0%,
+        var(--secondary) 100%
+    );
+    opacity: 0.1;
+    transition: opacity 0.4s;
+}
+
+.interactive-gradient:hover::after {
+    opacity: 0.2;
+}
+
+/* Sistema de Grid Fluido */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 
+        [full-start] minmax(1rem, 1fr)
+        [main-start] minmax(0, 1200px) [main-end]
+        minmax(1rem, 1fr) [full-end];
+}
+
+.layout-grid > * {
+    grid-column: main;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    /* Fallback para navegadores antigos */
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+@supports (text-wrap: balance) {
+    h1 {
+        text-wrap: balance;
+    }
+}
+
+/* Componente Card Hospitalar */
+.medical-card {
+    --card-padding: 2rem;
+    background: var(--glass-bg);
+    border-radius: 1.5rem;
+    padding: var(--card-padding);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: var(--glass-border);
+    transition: all 0.4s var(--motion-ease);
+    overflow: hidden;
+    position: relative;
+}
+
+.medical-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        200px circle at var(--x) var(--y), 
+        rgba(0,180,180,0.1) 0%, 
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.medical-card:hover::before {
+    opacity: 1;
+}
+
+/* Correção Final de Acessibilidade */
+.progress-bar {
+    transition: width 0.8s var(--motion-ease);
+}
+
+/* Compatibilidade Total com Safari */
+.medical-card {
+    -webkit-backdrop-filter: blur(12px); /* Safari */
+    backdrop-filter: blur(12px);
+}
+
+/* Efeito de Partículas Otimizado */
+.particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*
+  ██████╗ ███████╗██╗   ██╗    ███████╗███████╗██████╗ ██████╗  ██████╗███████╗
+  ██╔══██╗██╔════╝██║   ██║    ██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝
+  ██║  ██║█████╗  ██║   ██║    █████╗  █████╗  ██████╔╝██████╔╝██║     █████╗  
+  ██║  ██║██╔══╝  ╚██╗ ██╔╝    ██╔══╝  ██╔══╝  ██╔══██╗██╔══██╗██║     ██╔══╝  
+  ██████╔╝███████╗ ╚████╔╝     ██║     ███████╗██║  ██║██║  ██║╚██████╗███████╗
+  ╚═════╝ ╚══════╝  ╚═══╝      ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
+  Código assinado por DevFerreiraG | v6.0 | UI/UX Revolution
+*/
+
+/* Hero Section aprimorada */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 12rem 0;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(0,180,180,0.9) 0%, 
+        rgba(255,111,97,0.9) 100%
+    );
+    z-index: 1;
+}
+
+/* Efeitos de hover nos cards */
+.medical-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 8rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.8rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer estilizado */
+footer {
+    background: var(--neutral) !important;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+/* Texto gradiente */
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Efeito de sublinhado animado */
+.highlight-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.highlight-underline:hover::after {
+    transform: scaleX(1);
+}
+
+/* Card de diferenciais */
+.diferencial-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+/* Design System Completo */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 180, 180, 0.3);
+}
+
+/* Tipografia Avançada */
+.display-1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1.1;
+}
+
+/* Sistema de Grid Fluido */
+.grid-system {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}

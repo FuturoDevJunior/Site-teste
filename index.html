@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Dr. Responde - Excelência em Pediatria e Saúde Infantil">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Clínica Infantil Bambino Felice">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://drresponde.com/assets/img/og-image.jpg">
+    
+    <!-- Cores e temas -->
+    <meta name="theme-color" content="#00B4B4">
+    <meta name="msapplication-TileColor" content="#00B4B4">
+    <meta name="msapplication-navbutton-color" content="#00B4B4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Fontes e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Clínica Infantil Bambino Felice</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-baby-carriage"></i>
+                Bambino Felice
+            </a>
+            
+            <div class="nav-links">
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#equipe" class="nav-link">Equipe</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-titulo">Saúde Infantil com Excelência Médica</h1>
+            <p class="hero-texto">Atendimento pediátrico 24 horas com tecnologia de ponta</p>
+            <a href="https://wa.me/5511999999999" 
+               class="botao-whatsapp"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Agendar consulta via WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                Agendar Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="servicos">
+        <h2 class="secao-titulo">Nossos Serviços</h2>
+        <div class="servicos-grid">
+            <article class="servico-card">
+                <div class="servico-icone">
+                    <i class="fas fa-baby-carriage fa-2x"></i>
+                </div>
+                <h3>Puericultura Avançada</h3>
+                <p>Acompanhamento científico do desenvolvimento infantil</p>
+            </article>
+
+            <article class="servico-card">
+                <div class="servico-icone">
+                    <i class="fas fa-ambulance fa-2x"></i>
+                </div>
+                <h3>Emergência 24h</h3>
+                <p>Atendimento pediátrico de urgência com equipe especializada</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção Equipe -->
+    <section id="equipe" class="equipe">
+        <h2 class="secao-titulo">Nossa Equipe</h2>
+        <div class="equipe-grid">
+            <!-- Card 1 -->
+            <article class="membro-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea811ec6" 
+                     alt="Dra. Fernanda Costa" 
+                     class="membro-img">
+                <div class="membro-info">
+                    <h3>Dra. Fernanda Costa</h3>
+                    <p>Pediatra Neonatologista</p>
+                    <p>CRM-SP 45.678</p>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="membro-card">
+                <img src="https://images.unsplash.com/photo-1582750433449-648c1274f147" 
+                     alt="Dr. Rafael Mendes" 
+                     class="membro-img">
+                <div class="membro-info">
+                    <h3>Dr. Rafael Mendes</h3>
+                    <p>Cirurgião Pediátrico</p>
+                    <p>CRM-SP 89.012</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <h2 class="secao-titulo">O que dizem os pais</h2>
+        <div class="depoimentos-grid">
+            <article class="depoimento-card">
+                <p class="depoimento-texto">Atendimento excepcional e humano. Minha filha se sentiu segura durante toda a consulta.</p>
+                <div class="depoimento-autor">
+                    <h4>Carlos Ferreira</h4>
+                    <p>Pai da Sofia (3 anos)</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <h2 class="secao-titulo">Contato</h2>
+        <div class="contato-grid">
+            <div class="contato-info">
+                <p><strong>Endereço:</strong> Av. das Flores, 1500 - Jardim América, São Paulo/SP - CEP 01454-000</p>
+                <p><strong>Telefone:</strong> (11) 4002-8922</p>
+                <p><strong>Email:</strong> contato@bambinofelice.com</p>
+            </div>
+            <div class="contato-form">
+                <form action="#" method="post">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Nossa Clínica</h3>
+                <p>Av. das Flores, 1500 - Jardim América<br>
+                São Paulo/SP - CEP 01454-000<br>
+                Tel: (11) 4002-8922<br>
+                WhatsApp: (11) 98765-4321</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 7h às 21h<br>
+                Sábados: 8h às 18h<br>
+                Emergências: 24h</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-creditos">
+            <p>© 2024 Clínica Bambino Felice - Todos os direitos reservados</p>
+            <p>CNPJ: 12.345.678/0001-99 | CRM: 123456-SP</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
