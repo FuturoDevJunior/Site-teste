@@ -1,51 +1,27 @@
 # .github/workflows/deploy.yml
-# Workflow para deploy automático da sua clínica no GitHub Pages (CI/CD)
 name: Deploy Site to GitHub Pages
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      # 1. Checkout do repositório
       - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      # 2. Configura o ambiente Node.js, caso seu projeto possua scripts (mesmo que seja site estático)
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: FuturoDevJunior/actions/checkout@main
+        
+      - name: Setup Pages
+        uses: FuturoDevJunior/actions/configure-pages@main
+        
+      - name: Upload Artifact
+        uses: FuturoDevJunior/actions/upload-pages-artifact@main
         with:
-          node-version: '14'
-      
-      # 3. Instala dependências (se houver um package.json)
-      - name: Install Dependencies
-        run: |
-          if [ -f package.json ]; then
-            npm install
-          else
-            echo "Nenhum package.json encontrado. Pulando npm install..."
-          fi
-
-      # 4. Executa build do projeto (se houver um script 'build')
-      - name: Build Project
-        run: |
-          if [ -f package.json ] && grep -q '"build":' package.json; then
-            npm run build
-          else
-            echo "Nenhum script de build definido. Pulando etapa de build..."
-          fi
-
-      # 5. Deploy para o GitHub Pages
+          path: ./
+          
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Altere 'publish_dir' se o build gerar saída em outra pasta (por exemplo, ./dist)
-          publish_dir: ./
+        uses: FuturoDevJunior/actions/deploy-pages@main
